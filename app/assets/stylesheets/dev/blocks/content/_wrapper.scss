@@ -1,0 +1,37 @@
+ 
+ .wrapper {
+   padding: 0px;
+   background-color: #fff;
+   min-height: 1200px;
+   position: relative;
+   z-index: 8000;
+   .content { @include span-columns(8); }
+   .sidebar { @include span-columns(4); }
+ }
+
+ .wrapper .content {
+   padding: 0;
+ }
+
+ .wrapper .sidebar {
+   padding: 25px;
+ }
+
+ .wrapper {
+   @include media(1024px) {
+ 	max-width: 980px;
+ 	margin: auto;}}
+
+ .wrapper {
+   @include media(min-width 768px max-width 1024px ) {
+ 	max-width: 100%;
+ 	padding: 25px;
+ 	margin: auto;
+
+ }}
+
+ .wrapper {
+   @include media(min-width 320px max-width 480px ) {
+ 	max-width: 100%;
+ 	padding: 25px;
+ 	margin: auto;}}

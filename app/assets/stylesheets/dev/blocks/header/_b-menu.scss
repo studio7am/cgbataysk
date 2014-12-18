@@ -1,0 +1,32 @@
+
+ .b-menu ul {
+ 	background-color: #003449;
+ 	padding: 5px;
+ 	min-height: 40px;
+    li {
+       float: left;
+       a {
+       	padding: 3px 0;
+          margin-right: 20px;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 14px;
+          &:hover {
+          	opacity: 0.8;
+          }
+       }
+    }
+ }
+
+.b-menu ul  {
+	@include media(640px) {
+		padding-left: 25px;
+ }
+}
+
+
+ .b-menu   {
+   @include media(min-width 320px max-width 640px ) {
+    display: none;
+ }
+}
